@@ -1,2 +1,2 @@
 # Jetson-TX2-Project
-Using Camera and Control Linear actuator
+Control Linear actuator Using Camera
