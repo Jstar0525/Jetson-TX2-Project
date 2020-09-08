@@ -18,6 +18,7 @@ DIR = 33  # BOARD pin 33
 
 print('\n Resolution : ', lead/pulse_per_rev, 'mm/pulse \n')
 
+# Function of Step motor
 def give_pulse( PUL, pulse_per_rev, pulse_delay, delay_time):
 	
 	for i in range(0,pulse_per_rev):
@@ -34,14 +35,14 @@ GPIO.setmode(GPIO.BOARD)  # BOARD pin-numbering scheme
 GPIO.setup(PUL, GPIO.OUT)  # Pulse pin set as output
 GPIO.setup(DIR, GPIO.OUT)  # Direction pin set as output
 
-
+# Run Step Motor 
 GPIO.output(DIR, GPIO.LOW)
 give_pulse( PUL, pulse_per_rev, pulse_delay, delay_time)
 
 GPIO.output(DIR, GPIO.HIGH)
 give_pulse( PUL, pulse_per_rev, pulse_delay, delay_time)
 
+# Cleanup GPIO
 GPIO.cleanup()
-print('end')
 
 
