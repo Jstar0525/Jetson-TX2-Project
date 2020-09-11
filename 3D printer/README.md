@@ -10,7 +10,7 @@ Using CAD/CAM sotfware and 3D printer, Make a camera support
 
 <img src="camera_support.PNG" width="30%" height="30%"></img>
 
-* you can see **.stl** file in below site
+* you can see **.stl** file directly in below site
 
 https://github.com/Jstar0525/Jetson-TX2-Project/blob/master/3D%20printer/camera_support.stl
 
